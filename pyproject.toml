@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdlp-discretization"
+version = "0.4.0"
+authors = [
+    { name="Henry Lin", email="hlin117@gmail.com" },
+]
+description = "GPU-accelerated MDLP discretization"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.11.2",
+    "scipy>=0.18.1",
+    "scikit-learn>=0.18.1",
+    "cupy-cuda12x>=12.0.0",
+]
+
+[tool.setuptools]
+packages = ["mdlp"] 
