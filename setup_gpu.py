@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='mdlp-discretization-gpu',
+    name='mdlp-discretization',
     version='0.4.0',
     description='GPU-accelerated MDLP discretization',
     license='BSD 3 Clause',
