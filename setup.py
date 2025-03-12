@@ -7,11 +7,7 @@ setup(
     license='BSD 3 Clause',
     author='Henry Lin',
     author_email='hlin117@gmail.com',
-    packages=['mdlp'],
-    py_modules=['mdlp.discretization_gpu'],
-    package_data={
-        'mdlp': ['discretization_gpu.py'],
-    },
+    packages=find_packages(),
     install_requires=[
         'numpy>=1.11.2',
         'scipy>=0.18.1',
