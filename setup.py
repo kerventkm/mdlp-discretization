@@ -1,8 +1,5 @@
 from setuptools import setup, find_packages
 
-# Define packages to include, explicitly excluding the CPU implementation
-packages = find_packages(exclude=['mdlp._mdlp', 'mdlp.discretization'])
-
 setup(
     name='mdlp-discretization',
     version='0.4.0',
@@ -10,12 +7,10 @@ setup(
     license='BSD 3 Clause',
     author='Henry Lin',
     author_email='hlin117@gmail.com',
-    packages=packages,
+    packages=['mdlp'],
+    py_modules=['mdlp.discretization_gpu'],
     package_data={
-        'mdlp': ['*.py'],
-    },
-    exclude_package_data={
-        'mdlp': ['_mdlp.cpp', '_mdlp.pyx'],
+        'mdlp': ['discretization_gpu.py'],
     },
     install_requires=[
         'numpy>=1.11.2',

@@ -1,3 +1,5 @@
+"""GPU-accelerated MDLP discretization"""
+
 from .discretization_gpu import MDLP_GPU
 
 __version__ = '0.4.0'
